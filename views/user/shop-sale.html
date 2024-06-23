@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="../css/shop-sale.css">
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="https://kit.fontawesome.com/e6688e278c.js" crossorigin="anonymous"></script>
+
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!----------------js---------------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <title>CX-Sale</title> 
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    <div class="clouds"></div>
+    <section class="content">
+
+      <div class="top">
+         <img src="../../images/coxlogo.png" alt=""> 
+         <div class="wrap">
+             <div class="search">
+                <input type="text" class="searchTerm" placeholder="What are you looking for?">
+                <button type="submit" class="searchButton">
+                 <i class="uil uil-search"></i>
+               </button>
+             </div>
+          </div>
+         <div class="icons">
+             <div class="icon-container"><div class="icon"><i class="uil uil-shopping-bag"></i></div></div>
+             <div class="icon-container"><div class="icon"><i class="uil uil-user"></i></div></div>
+         </div>
+     </div>
+     <nav>
+        <div class="search-mobile">
+            <input type="search" name="" id="" placeholder="Search here...">
+        </div>
+        <div class="the-nav">
+            <div class="nav-section"><span>Home</span></div>
+            <div class="nav-section nav-shop">
+                <span>Shop</span> 
+                <div class="up-down-icon">
+                    <i class="uil uil-angle-down" id="up-down-icon"></i>
+                </div>
+                <div class="drop-border shop">
+                    <div class="dropdown-content">
+                        <a href="#"><div class="opt all-shop">
+                            <img src="../../images/bracelet (1).png" alt="">
+                            <div class="text">
+                                <h3>straps</h3>
+                                <p>Find the best straps that you can optain, Go to shop now.</p>
+                            </div>           
+                        </div></a>
+                        <a href="#"><div class="opt on-sale">
+                            <img src="../../images/sale-seeklogo.com.svg" alt="">
+                            <div class="text">
+                                <h3>On sale</h3>
+                                <p>Discover your favourite items with really good prices.</p>
+                            </div>    
+                        </div></a>
+                        <a href="#"><div class="opt on-sale">
+                            <img src="../../images/sale-seeklogo.com.svg" alt="">
+                            <div class="text">
+                                <h3>straps</h3>
+                                <p>Find the best straps that you can optain, Go to shop now.</p>
+                            </div>    
+                        </div></a>
+                      </div>
+                </div>
+            </div>
+            
+            <div class="nav-section"><span>Orders</span></div>
+            <div class="nav-section nav-help">
+                <span>Help</span> 
+                <div class="up-down-icon">
+                    <i class="uil uil-angle-down" id="up-down-icon"></i>
+                </div>
+                <div class="drop-border help">
+                    <div class="dropdown-content">
+                        <a href="#"><div class="opt about">
+                            <img src="../../images/coxlogoww.png" alt="">
+                            <div class="text">
+                                <h3>About CoX</h3>
+                                <p>Want to know more about us? Here is all the informaition you may need.</p>
+                            </div>           
+                        </div></a>
+                        <a href="#"><div class="opt contact">
+                            <img src="../../images/icons8-call-64.png" alt="">
+                            <div class="text">
+                                <h3>Contact us</h3>
+                                <p>Get in touch if you faced any problem or want to ask about something. </p>
+                            </div>    
+                        </div></a>
+                      </div>
+                </div>
+            </div>
+        </div>
+     </nav>
+
+     <div class="best-seller">
+        <h2>ON SALE ITEMS</h2>
+        <div class="border"></div>
+        <div class="search-filter-all">
+            <div class="search-filter">
+                <div class="search-div">
+                    <input type="text" id="myProducts" onkeyup="searchNames()" placeholder="Search for product.." title="Type something">
+                </div>
+                <div class="filter">
+                    <div class="filter-icon">
+                        <img src="../../images/icons8-filter-48.png" alt=""></div>
+                </div>  
+            </div>
+            <div class="filters">
+              <div class="real-filters">
+                <div class="rating">
+                  <h2>Rating</h2>
+                    <div class="rate">
+                        <label class="toggler-wrapper style-25">
+                            <input type="checkbox" >
+                            <div class="toggler-slider">
+                            <div class="toggler-knob"></div>
+                            </div>
+                        </label>
+                        <div class="badge"><i class="fa fa-star" style="color:white ;"></i></div>
+                    </div>
+                    <div class="rate">
+                        <label class="toggler-wrapper style-25">
+                            <input type="checkbox" >
+                            <div class="toggler-slider">
+                            <div class="toggler-knob"></div>
+                            </div>
+                        </label>
+                        <div class="badge">
+                          <i class="fa fa-star" style="color:white ;"></i>
+                          <i class="fa fa-star" style="color:white ;"></i>
+                        </div>
+                    </div>
+                    <div class="rate">
+                        <label class="toggler-wrapper style-25">
+                            <input type="checkbox" >
+                            <div class="toggler-slider">
+                            <div class="toggler-knob"></div>
+                            </div>
+                        </label>
+                        <div class="badge">
+                          <i class="fa fa-star" style="color:white ;"></i>
+                          <i class="fa fa-star" style="color:white ;"></i>
+                          <i class="fa fa-star" style="color:white ;"></i>
+                        </div>
+                    </div>
+                    <div class="rate">
+                        <label class="toggler-wrapper style-25">
+                            <input type="checkbox" >
+                            <div class="toggler-slider">
+                            <div class="toggler-knob"></div>
+                            </div>
+                        </label>
+                        <div class="badge">
+                          <i class="fa fa-star" style="color:white ;"></i>
+                          <i class="fa fa-star" style="color:white ;"></i>
+                          <i class="fa fa-star" style="color:white ;"></i>
+                          <i class="fa fa-star" style="color:white ;"></i>
+                        </div>
+                    </div>
+                    <div class="rate">
+                      <label class="toggler-wrapper style-25">
+                          <input type="checkbox" >
+                          <div class="toggler-slider">
+                          <div class="toggler-knob"></div>
+                          </div>
+                      </label>
+                      <div class="badge">
+                        <i class="fa fa-star" style="color:white ;"></i>
+                        <i class="fa fa-star" style="color:white ;"></i>
+                        <i class="fa fa-star" style="color:white ;"></i>
+                        <i class="fa fa-star" style="color:white ;"></i>
+                        <i class="fa fa-star" style="color:white ;"></i>
+                      </div>
+                  </div>
+                </div>
+                <div class="prices">
+                    <div class="header">
+                        <h2>Price Range</h2>
+                        <p>Use slider or enter min and max price</p>
+                    </div>
+                    <div class="price-input">
+                        <div class="field">
+                        <span>Min</span>
+                        <input type="number" class="input-min" value="2500">
+                        </div>
+                        <div class="separator">-</div>
+                        <div class="field">
+                        <span>Max</span>
+                        <input type="number" class="input-max" value="7500">
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="range-input">
+                        <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                        <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                    </div>
+                </div>
+                <div class="discounts">
+                  <h2>Discounts</h2>
+                    <div class="dis">
+                        <label class="toggler-wrapper style-25">
+                            <input type="checkbox" >
+                            <div class="toggler-slider">
+                            <div class="toggler-knob"></div>
+                            </div>
+                        </label>
+                        <div class="badge">10% or more</div>
+                    </div>
+                    <div class="dis">
+                        <label class="toggler-wrapper style-25">
+                            <input type="checkbox" >
+                            <div class="toggler-slider">
+                            <div class="toggler-knob"></div>
+                            </div>
+                        </label>
+                        <div class="badge">20% or more</div>
+                    </div>
+                    <div class="dis">
+                        <label class="toggler-wrapper style-25">
+                            <input type="checkbox" >
+                            <div class="toggler-slider">
+                            <div class="toggler-knob"></div>
+                            </div>
+                        </label>
+                        <div class="badge">30% or more</div>
+                    </div>
+                    <div class="dis">
+                        <label class="toggler-wrapper style-25">
+                            <input type="checkbox" >
+                            <div class="toggler-slider">
+                            <div class="toggler-knob"></div>
+                            </div>
+                        </label>
+                        <div class="badge">40% or more</div>
+                    </div>
+                    <div class="dis">
+                      <label class="toggler-wrapper style-25">
+                          <input type="checkbox" >
+                          <div class="toggler-slider">
+                          <div class="toggler-knob"></div>
+                          </div>
+                      </label>
+                      <div class="badge">50% or more</div>
+                  </div>
+                </div>
+              </div>
+                <button type="submit" class="filter-submit">Submit</button>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="product-card">
+                <div class="stars-product"></div>
+                <div class="twinkling-product"></div>
+                <div class="clouds-product"></div>
+                  <div class="main-images">
+                    <img id="blue" class="blue active" src="../../images/kisspng-beaded-bracelets-jewellery-gemstone-beaded-bracele-5ba240ac215d53.2577076115373600441367.png" alt="blue">
+                    <img id="pink" class="pink" src="../../images/pngfind.com-diamond-bracelet-png-6262948.png" alt="blue" style="size:200px ;">
+                    <img id="yellow" class="yellow" src="../../images/Screenshot (59).png" alt="blue">
+                  </div>
+                  <div class="shoe-details">
+                    <span class="shoe_name">COX NEW BEGINNING</span>
+                    <div class="stars-prod">
+                      <i class='bx bxs-star' ></i>
+                      <i class='bx bxs-star' ></i>
+                      <i class='bx bxs-star' ></i>
+                      <i class='bx bxs-star' ></i>
+                      <i class='bx bx-star' ></i>
+                    </div>
+                  </div>
+                  <div class="color-price">
+                    <div class="color-option">
+                      <span class="color">Colour:</span>
+                      <div class="circles">
+                        <span class="circle blue active"  id="blue"></span>
+                        <span class="circle pink " id="pink"></span>
+                        <span class="circle yellow " id="yellow"></span>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <span class="price_num">09.00 EGP</span>
+                      <span class="price_letter">Nine Pounds only</span>
+                    </div>
+                  </div>
+                  <div class="button">
+                    <div class="button-layer"></div>
+                    <button>Add To Cart</button>
+                  </div>
+              </div>
+              <div class="product-card">
+                <div class="stars-product"></div>
+                <div class="twinkling-product"></div>
+                <div class="clouds-product"></div>
+                  <div class="main-images">
+                    <img id="blue" class="blue active" src="../../images/kisspng-beaded-bracelets-jewellery-gemstone-beaded-bracele-5ba240ac215d53.2577076115373600441367.png" alt="blue">
+                    <img id="pink" class="pink" src="../../images/pngfind.com-diamond-bracelet-png-6262948.png" alt="blue" style="size:200px ;">
+                    <img id="yellow" class="yellow" src="../../images/Screenshot (59).png" alt="blue">
+                  </div>
+                  <div class="shoe-details">
+                    <span class="shoe_name">COX NEW BEGINNING</span>
+                    <div class="stars-prod">
+                      <i class='bx bxs-star' ></i>
+                      <i class='bx bxs-star' ></i>
+                      <i class='bx bxs-star' ></i>
+                      <i class='bx bxs-star' ></i>
+                      <i class='bx bx-star' ></i>
+                    </div>
+                  </div>
+                  <div class="color-price">
+                    <div class="color-option">
+                      <span class="color">Colour:</span>
+                      <div class="circles">
+                        <span class="circle blue active"  id="blue"></span>
+                        <span class="circle pink " id="pink"></span>
+                        <span class="circle yellow " id="yellow"></span>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <span class="price_num">09.00 EGP</span>
+                      <span class="price_letter">Nine Pounds only</span>
+                    </div>
+                  </div>
+                  <div class="button">
+                    <div class="button-layer"></div>
+                    <button>Add To Cart</button>
+                  </div>
+              </div>
+              <div class="product-card">
+                <div class="stars-product"></div>
+                <div class="twinkling-product"></div>
+                <div class="clouds-product"></div>
+                  <div class="main-images">
+                    <img id="blue" class="blue active" src="../../images/kisspng-beaded-bracelets-jewellery-gemstone-beaded-bracele-5ba240ac215d53.2577076115373600441367.png" alt="blue">
+                    <img id="pink" class="pink" src="../../images/pngfind.com-diamond-bracelet-png-6262948.png" alt="blue" style="size:200px ;">
+                    <img id="yellow" class="yellow" src="../../images/Screenshot (59).png" alt="blue">
+                  </div>
+                  <div class="shoe-details">
+                    <span class="shoe_name">COX NEW BEGINNING</span>
+                    <div class="stars-prod">
+                      <i class='bx bxs-star' ></i>
+                      <i class='bx bxs-star' ></i>
+                      <i class='bx bxs-star' ></i>
+                      <i class='bx bxs-star' ></i>
+                      <i class='bx bx-star' ></i>
+                    </div>
+                  </div>
+                  <div class="color-price">
+                    <div class="color-option">
+                      <span class="color">Colour:</span>
+                      <div class="circles">
+                        <span class="circle blue active"  id="blue"></span>
+                        <span class="circle pink " id="pink"></span>
+                        <span class="circle yellow " id="yellow"></span>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <span class="price_num">09.00 EGP</span>
+                      <span class="price_letter">Nine Pounds only</span>
+                    </div>
+                  </div>
+                  <div class="button">
+                    <div class="button-layer"></div>
+                    <button>Add To Cart</button>
+                  </div>
+              </div>
+              <div class="product-card">
+                <div class="stars-product"></div>
+                <div class="twinkling-product"></div>
+                <div class="clouds-product"></div>
+                  <div class="main-images">
+                    <img id="blue" class="blue active" src="../../images/kisspng-beaded-bracelets-jewellery-gemstone-beaded-bracele-5ba240ac215d53.2577076115373600441367.png" alt="blue">
+                    <img id="pink" class="pink" src="../../images/pngfind.com-diamond-bracelet-png-6262948.png" alt="blue" style="size:200px ;">
+                    <img id="yellow" class="yellow" src="../../images/Screenshot (59).png" alt="blue">
+                  </div>
+                  <div class="shoe-details">
+                    <span class="shoe_name">COX NEW BEGINNING</span>
+                    <div class="stars-prod">
+                      <i class='bx bxs-star' ></i>
+                      <i class='bx bxs-star' ></i>
+                      <i class='bx bxs-star' ></i>
+                      <i class='bx bxs-star' ></i>
+                      <i class='bx bx-star' ></i>
+                    </div>
+                  </div>
+                  <div class="color-price">
+                    <div class="color-option">
+                      <span class="color">Colour:</span>
+                      <div class="circles">
+                        <span class="circle blue active"  id="blue"></span>
+                        <span class="circle pink " id="pink"></span>
+                        <span class="circle yellow " id="yellow"></span>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <span class="price_num">09.00 EGP</span>
+                      <span class="price_letter">Nine Pounds only</span>
+                    </div>
+                  </div>
+                  <div class="button">
+                    <div class="button-layer"></div>
+                    <button>Add To Cart</button>
+                  </div>
+              </div>
+              <div class="product-card">
+                <div class="stars-product"></div>
+                <div class="twinkling-product"></div>
+                <div class="clouds-product"></div>
+                  <div class="main-images">
+                    <img id="blue" class="blue active" src="../../images/kisspng-beaded-bracelets-jewellery-gemstone-beaded-bracele-5ba240ac215d53.2577076115373600441367.png" alt="blue">
+                    <img id="pink" class="pink" src="../../images/pngfind.com-diamond-bracelet-png-6262948.png" alt="blue" style="size:200px ;">
+                    <img id="yellow" class="yellow" src="../../images/Screenshot (59).png" alt="blue">
+                  </div>
+                  <div class="shoe-details">
+                    <span class="shoe_name">COX NEW BEGINNING</span>
+                    <div class="stars-prod">
+                      <i class='bx bxs-star' ></i>
+                      <i class='bx bxs-star' ></i>
+                      <i class='bx bxs-star' ></i>
+                      <i class='bx bxs-star' ></i>
+                      <i class='bx bx-star' ></i>
+                    </div>
+                  </div>
+                  <div class="color-price">
+                    <div class="color-option">
+                      <span class="color">Colour:</span>
+                      <div class="circles">
+                        <span class="circle blue active"  id="blue"></span>
+                        <span class="circle pink " id="pink"></span>
+                        <span class="circle yellow " id="yellow"></span>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <span class="price_num">09.00 EGP</span>
+                      <span class="price_letter">Nine Pounds only</span>
+                    </div>
+                  </div>
+                  <div class="button">
+                    <div class="button-layer"></div>
+                    <button>Add To Cart</button>
+                  </div>
+              </div>
+              <div class="product-card">
+                <div class="stars-product"></div>
+                <div class="twinkling-product"></div>
+                <div class="clouds-product"></div>
+                  <div class="main-images">
+                    <img id="blue" class="blue active" src="../../images/kisspng-beaded-bracelets-jewellery-gemstone-beaded-bracele-5ba240ac215d53.2577076115373600441367.png" alt="blue">
+                    <img id="pink" class="pink" src="../../images/pngfind.com-diamond-bracelet-png-6262948.png" alt="blue" style="size:200px ;">
+                    <img id="yellow" class="yellow" src="../../images/Screenshot (59).png" alt="blue">
+                  </div>
+                  <div class="shoe-details">
+                    <span class="shoe_name">COX NEW BEGINNING</span>
+                    <div class="stars-prod">
+                      <i class='bx bxs-star' ></i>
+                      <i class='bx bxs-star' ></i>
+                      <i class='bx bxs-star' ></i>
+                      <i class='bx bxs-star' ></i>
+                      <i class='bx bx-star' ></i>
+                    </div>
+                  </div>
+                  <div class="color-price">
+                    <div class="color-option">
+                      <span class="color">Colour:</span>
+                      <div class="circles">
+                        <span class="circle blue active"  id="blue"></span>
+                        <span class="circle pink " id="pink"></span>
+                        <span class="circle yellow " id="yellow"></span>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <span class="price_num">09.00 EGP</span>
+                      <span class="price_letter">Nine Pounds only</span>
+                    </div>
+                  </div>
+                  <div class="button">
+                    <div class="button-layer"></div>
+                    <button>Add To Cart</button>
+                  </div>
+              </div>
+              <div class="product-card">
+                <div class="stars-product"></div>
+                <div class="twinkling-product"></div>
+                <div class="clouds-product"></div>
+                  <div class="main-images">
+                    <img id="blue" class="blue active" src="../../images/kisspng-beaded-bracelets-jewellery-gemstone-beaded-bracele-5ba240ac215d53.2577076115373600441367.png" alt="blue">
+                    <img id="pink" class="pink" src="../../images/pngfind.com-diamond-bracelet-png-6262948.png" alt="blue" style="size:200px ;">
+                    <img id="yellow" class="yellow" src="../../images/Screenshot (59).png" alt="blue">
+                  </div>
+                  <div class="shoe-details">
+                    <span class="shoe_name">COX NEW BEGINNING</span>
+                    <div class="stars-prod">
+                      <i class='bx bxs-star' ></i>
+                      <i class='bx bxs-star' ></i>
+                      <i class='bx bxs-star' ></i>
+                      <i class='bx bxs-star' ></i>
+                      <i class='bx bx-star' ></i>
+                    </div>
+                  </div>
+                  <div class="color-price">
+                    <div class="color-option">
+                      <span class="color">Colour:</span>
+                      <div class="circles">
+                        <span class="circle blue active"  id="blue"></span>
+                        <span class="circle pink " id="pink"></span>
+                        <span class="circle yellow " id="yellow"></span>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <span class="price_num">09.00 EGP</span>
+                      <span class="price_letter">Nine Pounds only</span>
+                    </div>
+                  </div>
+                  <div class="button">
+                    <div class="button-layer"></div>
+                    <button>Add To Cart</button>
+                  </div>
+              </div>
+              <div class="product-card">
+                <div class="stars-product"></div>
+                <div class="twinkling-product"></div>
+                <div class="clouds-product"></div>
+                  <div class="main-images">
+                    <img id="blue" class="blue active" src="../../images/kisspng-beaded-bracelets-jewellery-gemstone-beaded-bracele-5ba240ac215d53.2577076115373600441367.png" alt="blue">
+                    <img id="pink" class="pink" src="../../images/pngfind.com-diamond-bracelet-png-6262948.png" alt="blue" style="size:200px ;">
+                    <img id="yellow" class="yellow" src="../../images/Screenshot (59).png" alt="blue">
+                  </div>
+                  <div class="shoe-details">
+                    <span class="shoe_name">COX NEW BEGINNING</span>
+                    <div class="stars-prod">
+                      <i class='bx bxs-star' ></i>
+                      <i class='bx bxs-star' ></i>
+                      <i class='bx bxs-star' ></i>
+                      <i class='bx bxs-star' ></i>
+                      <i class='bx bx-star' ></i>
+                    </div>
+                  </div>
+                  <div class="color-price">
+                    <div class="color-option">
+                      <span class="color">Colour:</span>
+                      <div class="circles">
+                        <span class="circle blue active"  id="blue"></span>
+                        <span class="circle pink " id="pink"></span>
+                        <span class="circle yellow " id="yellow"></span>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <span class="price_num">09.00 EGP</span>
+                      <span class="price_letter">Nine Pounds only</span>
+                    </div>
+                  </div>
+                  <div class="button">
+                    <div class="button-layer"></div>
+                    <button>Add To Cart</button>
+                  </div>
+              </div>
+              <div class="product-card">
+                <div class="stars-product"></div>
+                <div class="twinkling-product"></div>
+                <div class="clouds-product"></div>
+                  <div class="main-images">
+                    <img id="blue" class="blue active" src="../../images/kisspng-beaded-bracelets-jewellery-gemstone-beaded-bracele-5ba240ac215d53.2577076115373600441367.png" alt="blue">
+                    <img id="pink" class="pink" src="../../images/pngfind.com-diamond-bracelet-png-6262948.png" alt="blue" style="size:200px ;">
+                    <img id="yellow" class="yellow" src="../../images/Screenshot (59).png" alt="blue">
+                  </div>
+                  <div class="shoe-details">
+                    <span class="shoe_name">COX NEW BEGINNING</span>
+                    <div class="stars-prod">
+                      <i class='bx bxs-star' ></i>
+                      <i class='bx bxs-star' ></i>
+                      <i class='bx bxs-star' ></i>
+                      <i class='bx bxs-star' ></i>
+                      <i class='bx bx-star' ></i>
+                    </div>
+                  </div>
+                  <div class="color-price">
+                    <div class="color-option">
+                      <span class="color">Colour:</span>
+                      <div class="circles">
+                        <span class="circle blue active"  id="blue"></span>
+                        <span class="circle pink " id="pink"></span>
+                        <span class="circle yellow " id="yellow"></span>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <span class="price_num">09.00 EGP</span>
+                      <span class="price_letter">Nine Pounds only</span>
+                    </div>
+                  </div>
+                  <div class="button">
+                    <div class="button-layer"></div>
+                    <button>Add To Cart</button>
+                  </div>
+              </div>
+        </div>
+
+    </div>
+        
+    </section>
+  <footer>
+    <div class="row r1">
+        <div class="col c1">
+            <h3>QUIK LINKS</h3>
+            <div class="inside-col">
+                <a href="">Home</a>
+                <a href="#">Cart</a>
+                <a href="#">Orders</a>
+                <a href="#">Profile</a>
+            </div>
+        </div>
+        <div class="col c2">
+            <h3>SHOP</h3>
+            <div class="inside-col">
+                <a href="#">CAT 1</a>
+        
+                <a href="#">CAT 2</a>
+
+                <a href="#">CAT 3</a>
+            </div>
+        </div>
+        <div class="col c3">
+            <a href="#"><img src="../../images/coxlogo.png" alt="" ></a>
+        </div>
+        <div class="col c4">
+            <h3>CUSTOMER SERVICE</h3>
+            <div class="inside-col"></div>       
+            <div class="inside-col">
+                <a href="#">Contact Us</a>
+                <a href="#">About COX</a>
+                <a href="#">FAQ</a>
+            </div>
+        </div>
+        <div class="col c5">
+            <h3>SOCIAL MEDIA</h3>
+            <div class="social-icons">
+                <a href=""><span class="fab fa-facebook-f" aria-hidden="true"></span></a>
+                <a href=""><span class="fab fa-twitter" aria-hidden="true"></span></a>
+                <a href=""><span class="fab fa-google-plus-g" aria-hidden="true"></span></a>
+                <a href=""><span class="fab fa-linkedin-in" aria-hidden="true"></span></a>
+                <a href=""><span class="fas fa-rss" aria-hidden="true"></span></a>
+                <a href=""><span class="fab fa-vk" aria-hidden="true"></span></a>
+            </div>
+        </div>
+    </div>
+    <div class="row r2">
+        <p class="copy-right">© 2022 CXIWORLD | All Rights Reserved<br> Developed By Code.ology
+        </p>
+    </div>
+  </footer>
+  <script>
+    let circle = document.querySelector(".color-option");
+ 
+    circle.addEventListener("click", (e)=>{
+      let target = e.target;
+      if(target.classList.contains("circle")){
+        circle.querySelector(".active").classList.remove("active");
+        target.classList.add("active");
+        document.querySelector(".main-images .active").classList.remove("active");
+        document.querySelector(`.main-images .${target.id}`).classList.add("active");
+      }
+    });
+   </script>  
+  <script src="../js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="../css/login-regesteration.css">
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="https://kit.fontawesome.com/e6688e278c.js" crossorigin="anonymous"></script>
+
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!----------------js---------------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <title>CX-Login&Regester</title> 
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    <div class="clouds"></div>
+    <section class="content">
+
+
+        <div class="forms">
+            <div class="wrapper">
+                <div class="title-text">
+                   <div class="title login">
+                      Login
+                   </div>
+                   <div class="title signup">
+                      Signup
+                   </div>
+                </div>
+                <div class="form-container">
+                   <div class="slide-controls">
+                      <input type="radio" name="slide" id="login" checked>
+                      <input type="radio" name="slide" id="signup">
+                      <label for="login" class="slide login">Login</label>
+                      <label for="signup" class="slide signup">Signup</label>
+                      <div class="slider-tab"></div>
+                   </div>
+                   <div class="form-inner">
+                      <form action="#" class="login">
+                         <div class="field">
+                            <input type="text" placeholder="Email Address" required>
+                         </div>
+                         <div class="field">
+                            <input type="password" placeholder="Password" required>
+                         </div>
+                         <div class="pass-link">
+                            <a href="#">Forgot password?</a>
+                         </div>
+                         <div class="field btn">
+                            <div class="btn-layer"></div>
+                            <input type="submit" value="Login">
+                         </div>
+                         <div class="signup-link">
+                            Not a member? <a href="" id="signup">Signup now</a>
+                         </div>
+                      </form>
+                      <form action="#" class="signup">
+                        <div class="field">
+                            <input type="text" placeholder="First name" required>
+                         </div>
+                         <div class="field">
+                            <input type="text" placeholder="Last name" required>
+                         </div>
+                         <div class="field">
+                            <input type="email" placeholder="Email Address" required>
+                         </div>
+                         <div class="field">
+                            <input type="text" placeholder="Mobile number" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required>
+                         </div>
+                         <div class="field">
+                            <input type="text" placeholder="Location" required>
+                         </div>
+                         <div class="field">
+                            <input type="password" placeholder="Password" required>
+                         </div>
+                         <div class="field">
+                            <input type="password" placeholder="Confirm password" required>
+                         </div>
+                         <div class="field btn">
+                            <div class="btn-layer"></div>
+                            <input type="submit" value="Signup">
+                         </div>
+                      </form>
+                   </div>
+                </div>
+             </div>
+        </div>
+        
+    </section>
+  <footer>
+    <div class="row r1">
+        <div class="col c1">
+            <h3>QUIK LINKS</h3>
+            <div class="inside-col">
+                <a href="">Home</a>
+                <a href="#">Cart</a>
+                <a href="#">Orders</a>
+                <a href="#">Profile</a>
+            </div>
+        </div>
+        <div class="col c2">
+            <h3>SHOP</h3>
+            <div class="inside-col">
+                <a href="#">CAT 1</a>
+        
+                <a href="#">CAT 2</a>
+
+                <a href="#">CAT 3</a>
+            </div>
+        </div>
+        <div class="col c3">
+            <a href="#"><img src="../../images/coxlogo.png" alt="" ></a>
+        </div>
+        <div class="col c4">
+            <h3>CUSTOMER SERVICE</h3>
+            <div class="inside-col"></div>       
+            <div class="inside-col">
+                <a href="#">Contact Us</a>
+                <a href="#">About COX</a>
+                <a href="#">FAQ</a>
+            </div>
+        </div>
+        <div class="col c5">
+            <h3>SOCIAL MEDIA</h3>
+            <div class="social-icons">
+                <a href=""><span class="fab fa-facebook-f" aria-hidden="true"></span></a>
+                <a href=""><span class="fab fa-twitter" aria-hidden="true"></span></a>
+                <a href=""><span class="fab fa-google-plus-g" aria-hidden="true"></span></a>
+                <a href=""><span class="fab fa-linkedin-in" aria-hidden="true"></span></a>
+                <a href=""><span class="fas fa-rss" aria-hidden="true"></span></a>
+                <a href=""><span class="fab fa-vk" aria-hidden="true"></span></a>
+            </div>
+        </div>
+    </div>
+    <div class="row r2">
+        <p class="copy-right">© 2022 CXIWORLD | All Rights Reserved<br> Developed By Code.ology
+        </p>
+    </div>
+  </footer>
+
+
+  <script>
+    const loginText = document.querySelector(".title-text .login");
+    const loginForm = document.querySelector("form.login");
+    const loginBtn = document.querySelector("label.login");
+    const signupBtn = document.querySelector("label.signup");
+    const signupLink = document.querySelector("form .signup-link a");
+    signupBtn.onclick = (()=>{
+      loginForm.style.marginLeft = "-50%";
+      loginText.style.marginLeft = "-50%";
+    });
+    loginBtn.onclick = (()=>{
+      loginForm.style.marginLeft = "0%";
+      loginText.style.marginLeft = "0%";
+    });
+    signupLink.onclick = (()=>{
+      signupBtn.click();
+      return false;
+    });
+ </script>
+<script src="../js/script.js"></script>
+
+</body>
+</html>
